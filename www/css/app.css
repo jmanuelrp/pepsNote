@@ -1,0 +1,70 @@
+
+/* Tip: Use "@import" to add styles instead of adding <link>'s in your
+   HTML, and volo will inline it when building for production */
+
+@import "install-button.css";
+@import "gumby/gumby.css";
+/*@import "bootstrap/bootstrap.min.css";*/
+/*@import "bootstrap/bootstrap-glyphicons.css";*/
+/*@import "../js/lib/layouts/css/layouts.css";*/
+
+@import "fonts.css";
+
+/* Your styles here */
+
+/* html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'MozTTLight', Verdana, sans-serif;
+}
+
+h1 {
+    font: 2.2rem/4.8rem "Open Sans", Sans-serif;
+}
+ */
+
+#frm-new-note textarea,
+#frm-new-note input {
+	border: 0.1em solid #ddd;
+	border-radius: 0.2em;
+}
+
+#frm-new-note textarea {
+	height: 2em;
+}
+
+
+#frm-new-note textarea:focus {
+	height: 8em;
+}
+
+.input-full {
+	height: auto !important;
+}
+
+.list-item {
+	margin-bottom: 0.2em;
+}
+
+.list-item .item-header {
+	border-top: 1px solid #125464;
+}
+
+.item-header h4 {
+	font-size: 1.3em;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.item-content {
+	margin-left: 0.4em;
+}
+
+.pull-right {
+	float: right;
+	margin-top: 0.3em;
+	margin-right: 0.3em;
+}

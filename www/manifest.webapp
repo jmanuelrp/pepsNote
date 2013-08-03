@@ -1,0 +1,24 @@
+{
+  "version": "0.1",
+  "name": "pepsNote",
+  "description": "Aplicacion sencilla para la creacion de notas.",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icons/notebox-128.png"
+  },
+  "developer": {
+    "name": "JManuel Ruiz Perez",
+    "url": "https://github.com/metalFranckie"
+  },
+  "installs_allowed_from": ["*"],
+  "appcache_path": "/cache.manifest",
+  "locales": {
+    "es": {
+      "description": "Notas rapidas",
+      "developer": {
+        "url": "https://github.com/metalFranckie/pepsNote"
+      }
+    }
+  },
+  "default_locale": "es"
+}

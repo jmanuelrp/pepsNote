@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<!-- Place favicon.ico in the root directory -->
+
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div id="main" class="container">
+			<div id="page-header">
+				<div class="row">
+					<div class="fourteen columns">
+						<div class="page-title">
+							<h3><small>peps</small>Note</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="fourteen columns">
+						<form id="frm-new-note">
+							<div class="row field">
+								<input type="text" id="form-item-title" placeholder="Titulo"  class="item-field">
+							</div>
+							<div class="row field">
+								<textarea  id="form-item-content" class="item-field"></textarea>
+							</div>
+							<div class="row field">
+								<div class="medium btn oval info icon-right entypo icon-plus">
+									<button type="button" id="new-note">Agregar</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="page-container"></div>
+			<div id="page-footer"></div>
+		</div>
+
+		<!-- Using require.js, a module system for javascript, include the
+				 js files. This loads "main.js", which in turn can load other
+				 files, all handled by require.js:
+				 http://requirejs.org/docs/api.html#jsfiles -->
+		<script type="text/javascript"
+						data-main="js/init.js"
+						src="js/lib/require.js"></script>
+		<script type="text/template" id="list_item-tpl">
+			<article class="list-item row">
+				<div class="pull-right">
+					<div class="small btn oval warning icon-left entypo icon-camera">
+						<button class="delete-note" data-id="<%= id %>">Eliminar</button>
+					</div>
+				</div>
+				<div class="item-header">
+					<h4><%= title %></h4>
+				</div>
+				<div class="item-content">
+					<%= content %>
+				</div>
+			</article>
+		</script>
+
+		<script type="text/template" id="list_item-tpl-edit">
+			<article class="list-item row">
+				<form class="frm-update-item">
+					<div class="row field">
+						<input name="title" value="<%= title %>" class="item-field">
+					</div>
+					<div class="row field">
+						<textarea name="content" class="item-field">
+							<%= content %>
+						</textarea>
+					</div>
+				</form>
+			</article>
+		</script>
+
+	</body>
+</html>
